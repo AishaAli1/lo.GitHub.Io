@@ -1,0 +1,41 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Riyadh Malls</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <i id="menu" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div id="box" class="options-box">
+        <h2 class="text">Riyadh Map</h2>
+        <h1 class="text"> THE BEST MALLS IN RIYADH <h1>
+                <hr>
+           <div>
+                <span class="text">Filter Locations</span>
+                <input type="text" placeholder="Filter" data-bind="textInput: query">
+            </div>
+            <hr>
+          <div>
+                <h2 class="text">List of Malls</h2>
+                <hr>
+            </div>
+            <ul class= "list1" data-bind="foreach:filterLocations">
+                <li class= "list1" data-bind="text:title, click:$root.clickMarker"></li>
+            </ul>
+            </div>
+            </div>
+      <div id="map" class="map"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+     <script src="https://use.fontawesome.com/056e8c93a6.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD264aYWgPKjpEmVJk3WxipY5jsv901w0Q&callback=initMap">
+    </script>
+</body>
+</html>

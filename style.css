@@ -1,0 +1,66 @@
+    html,
+    body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        height: 100%;
+        position: relative;
+    }
+    
+    #map {
+        height: 100%;
+        display: block;
+        width: 94%;
+        margin: 0 auto;
+        width-right: 100%;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+    }
+    
+    .menu {
+        background: #AAAF4F;
+        border-radius: 3px;
+        line-height: 35px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+        width: 300px;
+        z-index: 500;
+        top: 40px;
+        position: absolute;
+    }
+    
+    .text {
+        font-size: 15px;
+        text-align: center;
+        color: #FFF;
+    }
+    
+    .list1 {
+        font-size: 11px;
+        text-align: center;
+        color: black;
+    }
+    
+    .options-box {
+        background: #AAAF4F;
+        border-radius: 3px;
+        line-height: 35px;
+        padding: 10px 10px 30px 10px;
+        text-align: left;
+        width: 200px;
+        z-index: 500;
+        top: 40px;
+        position: absolute;
+    }
+    
+    .close {
+        -webkit-transform: translate(-220px, 0);
+        transform: translate(-220px, 0);
+        transition: transform 0.3s ease;
+    }
